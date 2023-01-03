@@ -659,7 +659,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/Program Files (x86)/LFU"
+			"value" : "C:/Program Files (x86)/LRU"
 		},
 		{
 			"name" : "CMAKE_LINKER",
@@ -875,7 +875,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "LFU"
+			"value" : "LRU"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1254,7 +1254,7 @@
 			"value" : "FALSE"
 		},
 		{
-			"name" : "LFU_BINARY_DIR",
+			"name" : "LRU_BINARY_DIR",
 			"properties" : 
 			[
 				{
@@ -1266,7 +1266,7 @@
 			"value" : "C:/mine/MyApp/LRU/cmake-build-debug"
 		},
 		{
-			"name" : "LFU_IS_TOP_LEVEL",
+			"name" : "LRU_IS_TOP_LEVEL",
 			"properties" : 
 			[
 				{
@@ -1278,7 +1278,7 @@
 			"value" : "ON"
 		},
 		{
-			"name" : "LFU_SOURCE_DIR",
+			"name" : "LRU_SOURCE_DIR",
 			"properties" : 
 			[
 				{

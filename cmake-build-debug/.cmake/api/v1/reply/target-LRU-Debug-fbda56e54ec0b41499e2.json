@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "LFU.exe"
+			"path" : "LRU.exe"
 		},
 		{
-			"path" : "LFU.pdb"
+			"path" : "LRU.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -56,7 +56,7 @@
 			]
 		}
 	],
-	"id" : "LFU::@6890427a1f51a3e7e1df",
+	"id" : "LRU::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -76,8 +76,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "LFU",
-	"nameOnDisk" : "LFU.exe",
+	"name" : "LRU",
+	"nameOnDisk" : "LRU.exe",
 	"paths" : 
 	{
 		"build" : ".",
