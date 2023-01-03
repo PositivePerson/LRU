@@ -24,14 +24,4 @@ vector<int> generatePages(int amount) {
     return pages;
 }
 
-vector<pair<int, bool>> generateRemoved(vector<int> pages) {
-    vector<pair<int, bool>> removedPages;
-    for (int i = 0; i < pages.size(); i++) {
-        removedPages.push_back(make_pair(pages[i], false));
-    }
-
-    cout << "Generated 'RemovedPages'\n";
-    return removedPages;
-}
-
 #endif //LRU_GENERATOR_H

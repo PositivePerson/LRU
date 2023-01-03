@@ -18,11 +18,4 @@ void displayStorage(vector<int> storage) {
     cout << '\n';
 }
 
-void displayFrequencies(vector<pair<int, int>> &frequencies) {
-    cout << "Page\tFrequency\n";
-    for(auto frequency: frequencies){
-        cout << frequency.first << '\t' << frequency.second << '\n';
-    }
-}
-
 #endif //LRU_DISPLAYERS_H

@@ -1,7 +1,5 @@
 #include <bits/stdc++.h>
-#include <iterator>
 #include "displayers.h"
-#include "findLeast.h"
 #include "generator.h"
 
 using namespace std;
@@ -18,15 +16,18 @@ int main()
     vector<int> storageOrder(capacity, -1);
     int order = 0;
 
-    vector<int> pages = { 7, 9, 1, 2, 9, 3, 9, 4, 2, 3, 9, 3, 2 };
-//    int pagesAmount = 3;
-//    cout << "Pages amount (number): ";
-//    cin >> pagesAmount;
-//    cout << '\n';
-//    cout << "----- generators -----\n";
-//    vector<int> pages = generatePages(pagesAmount);
-//    vector<pair<int, bool>> removedPages = generateRemoved(pages);
-//    cout << "--- end of generators ---\n";
+
+
+//    vector<int> pages = { 7, 9, 1, 2, 9, 3, 9, 4, 2, 3, 9, 3, 2 };
+    int pagesAmount = 3;
+    cout << "Pages amount (number): ";
+    cin >> pagesAmount;
+    cout << '\n';
+    cout << "----- generator -----\n";
+    vector<int> pages = generatePages(pagesAmount);
+    cout << "--- end of generator ---\n";
+
+
 
     for(auto page: pages){
         cout << '\n';
@@ -49,8 +50,6 @@ int main()
 
             for(int j=0 ; j<storage.size() ; j++) {
                 if(storage[j] == page) {
-//                    cout << "Removing first instance of " << page << " that was at index " << j << '\n';
-//                    storage.erase(storage.begin() + j);
 
                     cout << "Updating order of page " << page << '\n';
                     storageOrder[j] = order++;
@@ -64,8 +63,6 @@ int main()
             int min = storageOrder[0];
             for(int j=0 ; j<storage.size() ; j++) {
                 if(storageOrder[j] < min) {
-//                    cout << "Removing first instance of " << page << " that was at index " << j << '\n';
-//                    storage.erase(storage.begin() + j);
                     leastRecentStorageIndex = j;
                         min = storageOrder[j];
                 }
@@ -74,11 +71,6 @@ int main()
             storage[leastRecentStorageIndex] = page;
             storageOrder[leastRecentStorageIndex] = order++;
         }
-//        storage.push_back(page);
-
-//        if(storage.size() > capacity) {
-//            storage.erase(storage.begin());
-//        }
     }
 
     cout << '\n';
