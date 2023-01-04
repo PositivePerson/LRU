@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
 #include "displayers.h"
 #include "generator.h"
+#include "fetchData.h"
 
 using namespace std;
 
@@ -19,13 +20,18 @@ int main()
 
 
 //    vector<int> pages = { 7, 9, 1, 2, 9, 3, 9, 4, 2, 3, 9, 3, 2 };
-    int pagesAmount = 3;
-    cout << "Pages amount (number): ";
-    cin >> pagesAmount;
+// ---------- OR ----------
+//        int pagesAmount = 3;
+//        cout << "Pages amount (number): ";
+//        cin >> pagesAmount;
+//        cout << '\n';
+//        cout << "----- generator -----\n";
+//        vector<int> pages = generatePages(pagesAmount);
+//        cout << "--- end of generator ---\n";
+// ---------- OR ----------
+    vector<int> pages;
     cout << '\n';
-    cout << "----- generator -----\n";
-    vector<int> pages = generatePages(pagesAmount);
-    cout << "--- end of generator ---\n";
+    getPagesFromFile(pages);
 
 
 
